@@ -36,10 +36,10 @@ print(venue)
 # Task 2: Venue Selection: Enhance the program to reccomend additional facilities like 
 # audio system or projector based on number of attendees.
 
-if attendees >= 15: audio_system = True
-if attendees >= 40: projector = True
-
-if audio_system == True and projector == False:
-    print("We think you should add an audio system to your event package")
-elif audio_system == True and projector == True:
-    print("We think you should add an audio system and projector to your package")
+if venue == "large hall":
+    print("Both a projector and audio system are included in this package")
+if venue == "conference room":
+    if attendees >= 30 < 60:
+        print("You should consider adding an audio system to your package")
+    elif attendees >= 60:
+        print("You should consider adding an audio system and projector to your package")
