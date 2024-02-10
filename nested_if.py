@@ -20,28 +20,4 @@ else:
 print(" ")
 
 if place == "cave":
-    cave_option_1 = input("do you want to light a torch, or proceed in the dark? ")
-    
-# Task 3: Default Path (See pass on line 13)
-
-# Question 2: Quick Decisions: The Event Planner:
-
-# Task 1: Code Correction
-
-attendees = int(input("Enter number of attendees: "))
-if attendees > 100: venue = "large hall"
-elif attendees < 100: venue = "conference room"
-print(venue)
-
-# Task 2: Venue Selection: Enhance the program to reccomend additional facilities like 
-# audio system or projector based on number of attendees.
-
-if attendees >= 15: audio_system = True
-if attendees > 40: projector = True
-
-if audio_system == True and projector == False:
-    print("We think you should add an audio system to your event package")
-elif projector == True and audio_system == False:
-    print("We think you should add a projector to your event package")
-elif audio_system and projector == True: 
-    print("We think you should add an audio system and projector to your event package")
+    cave_option_1 = input("do you want to light a torch, or proce
