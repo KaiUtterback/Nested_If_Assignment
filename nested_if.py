@@ -89,3 +89,23 @@ try:
         print(file_contents)
 except FileNotFoundError:
     pass
+
+# Question 4: Nested Quick Decisions: Shopping Assistant:
+print(" ")
+
+# Task 1 Code Correction
+
+weather = input("Enter the weather: sunny, rainy, or cold: ")
+clothing = "sunglasses" if weather == "sunny" else "umbrella" if weather == "rainy" else "sweater" if weather == "cold" else "you made an incorrect entry" # I added this last else statement because I felt we needed a catch all if weather == something other than sunny, rainy, cold.
+print(clothing)
+
+# Task 2: Extra Clothing Reccomendations:
+
+print("Here are some extra clothing items you may consider adding to your outfit:")
+
+extra = "shorts and a T shirt" if weather == "sunny" else "rain coat and boots" if weather == "rainy" else "hat and boots" if weather == "cold" else "you made an incorrect entry"
+print(extra)
+
+# Task 3: Accessories:
+
+print("Here are some accessories you may want to include in your option:")
