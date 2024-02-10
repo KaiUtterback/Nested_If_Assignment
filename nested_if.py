@@ -101,11 +101,42 @@ print(clothing)
 
 # Task 2: Extra Clothing Reccomendations:
 
+print(" ")
 print("Here are some extra clothing items you may consider adding to your outfit:")
 
-extra = "shorts and a T shirt" if weather == "sunny" else "rain coat and boots" if weather == "rainy" else "hat and boots" if weather == "cold" else "you made an incorrect entry"
+extra = "shorts and a T shirt" if weather == "sunny" else "rain coat" if weather == "rainy" else "hat and boots" if weather == "cold" else "you made an incorrect entry"
 print(extra)
 
 # Task 3: Accessories:
 
+print(" ")
 print("Here are some accessories you may want to include in your option:")
+
+accesory = "sunscreen" if clothing == "sunglasses" else "boots" if clothing == "umbrella" else "gloves" if clothing == "sweater" else "you made an incorrect entry"
+print(accesory)
+
+# Question 5: The Silent Logger: System Monitor
+print("")
+
+# Tasks 1, 2, & 3:
+
+import random
+
+cpu_usage = random.randint(0, 100)
+disk_usage = random.randint(0, 100)
+
+alert_threshold = 90
+
+if cpu_usage > alert_threshold:
+    print("High CPU usage!")
+elif 80 <= cpu_usage <= 90:
+    pass  
+
+if disk_usage > alert_threshold:
+    print("High disk usage!")
+elif 80 <= disk_usage <= 90:
+    pass  
+
+print("")
+print(f"Simulated CPU usage: {cpu_usage}%")
+print(f"Simulated disk space usage: {disk_usage}%")
