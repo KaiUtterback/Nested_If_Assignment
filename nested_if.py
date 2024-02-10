@@ -60,3 +60,32 @@ if meal == "Yes":
     print("We reccomend Veggie Delight Caterers for your event")
 else:
     print("We reccomend Gourmet Meals Caterers for your event")
+    
+# Question 3: Silent Error handler
+print(" ")
+
+# Task 1 Code Correction:
+
+try:
+    x = 1 / 0
+except ZeroDivisionError:
+    pass
+
+# Task 2: Division calculator
+B = "two"
+try: 
+    A = 3 / B
+except TypeError:
+    pass
+
+# Task 3: File Reader
+
+try:
+    filename = input("Enter the filename to read: ")
+    with open(filename, 'r') as file:
+        file_contents = file.read()
+        
+        print("Contents of the file:")
+        print(file_contents)
+except FileNotFoundError:
+    pass
