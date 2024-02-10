@@ -9,11 +9,10 @@ if place == "forest":
     if action == "climb a tree":
         print("You found a bird's nest!")
     elif action != "climb a tree":
-            print("You found a boat!")  
+        print("You found a boat!")  
+        pass
 elif place == "cave":
     print("You find a hidden treasure")
-else: 
-    pass
 
 # Task 2: Expand the game. If the user chooses "cave", ask them if they want to light a torch
 # or proceed in the dark.
