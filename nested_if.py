@@ -43,3 +43,6 @@ if venue == "conference room":
         print("You should consider adding an audio system to your package")
     elif attendees >= 60:
         print("You should consider adding an audio system and projector to your package")
+    elif attendees < 30:
+        print("You do not need a projector or audio system unless you would like one.")
+        
