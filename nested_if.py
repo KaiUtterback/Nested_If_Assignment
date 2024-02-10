@@ -22,7 +22,7 @@ print(" ")
 if place == "cave":
     cave_option_1 = input("do you want to light a torch, or proceed in the dark? ")
     
-# Task 3: Default Path (See pass on line 13)
+# Task 3: Default Path (See pass on line 16)
 
 # Question 2: Quick Decisions: The Event Planner:
 
@@ -31,6 +31,7 @@ if place == "cave":
 attendees = int(input("Enter number of attendees: "))
 if attendees >= 100: venue = "large hall"
 else: venue = "conference room"
+
 print(venue)
 
 # Task 2: Venue Selection: Enhance the program to reccomend additional facilities like 
@@ -38,6 +39,9 @@ print(venue)
 
 if venue == "large hall":
     print("Both a projector and audio system are included in this package")
+    
+# In my head, the large hall would just come loaded with these options
+    
 if venue == "conference room":
     if attendees >= 30 < 60:
         print("You should consider adding an audio system to your package")
@@ -46,3 +50,13 @@ if venue == "conference room":
     elif attendees < 30:
         print("You do not need a projector or audio system unless you would like one.")
         
+# Task 3: catering choices: Ask the user if they want vegetarian food. 
+# Reccomend veggie delight caterers if yes, otherwise reccomend gourmet meals caterers
+print(" ")
+
+meal = input("Would you like vegetarian food to be served at your event? Yes or No: ")     
+
+if meal == "Yes":
+    print("We reccomend Veggie Delight Caterers for your event")
+else:
+    print("We reccomend Gourmet Meals Caterers for your event")
