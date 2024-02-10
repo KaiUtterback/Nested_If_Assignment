@@ -12,6 +12,8 @@ if place == "forest":
         print("You found a boat!")  
 elif place == "cave":
     print("You find a hidden treasure")
+else: 
+    pass
 
 # Task 2: Expand the game. If the user chooses "cave", ask them if they want to light a torch
 # or proceed in the dark.
